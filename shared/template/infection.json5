@@ -1,0 +1,14 @@
+{
+    "$schema": "vendor/infection/infection/resources/schema.json",
+    "source": {
+        "directories": ["src"]
+    },
+    // Lists every mutant that escaped or wasn't covered, with its diff
+    "logs": {
+        "text": "php://stderr"
+    },
+    // Every mutant must be killed. Ignore one only when it can't change behaviour, under
+    // "mutators", with a comment saying why.
+    "minMsi": 100,
+    "minCoveredMsi": 100
+}

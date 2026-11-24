@@ -30,9 +30,10 @@ composer install
 vendor/bin/phpunit
 vendor/bin/phpstan analyse
 vendor/bin/pint --test
+vendor/bin/infection --with-uncovered --show-mutations=0
 ```
 
-The test in `tests/` is built on PHPStan's `RuleTestCase`, with fixture files in `tests/data/`. The fixtures break the rule on purpose, so PHPStan and Pint skip them.
+The test in `tests/` is built on PHPStan's `RuleTestCase`, with fixture files in `tests/data/`. The fixtures break the rule on purpose, so PHPStan and Pint skip them. Infection needs a coverage driver such as pcov, and fails unless the tests kill every mutant.
 
 ## License
 

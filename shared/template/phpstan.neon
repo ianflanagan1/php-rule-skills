@@ -1,0 +1,7 @@
+parameters:
+    level: 9
+    checkMissingOverrideMethodAttribute: true
+    # The fixtures in tests/Fixture are .php.inc files, which PHPStan doesn't analyse
+    paths:
+        - src
+        - tests
