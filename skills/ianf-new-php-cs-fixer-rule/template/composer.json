@@ -1,0 +1,38 @@
+{
+    "name": "__PACKAGE__",
+    "description": "__DESCRIPTION__",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["php-cs-fixer", "php-cs-fixer-custom-fixer", "coding-standard", "fixer"],
+    "authors": [
+        {
+            "name": "Ian Flanagan"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "friendsofphp/php-cs-fixer": "^3.95"
+    },
+    "require-dev": {
+        "infection/infection": "^0.35",
+        "laravel/pint": "^1.32",
+        "phpstan/phpstan": "^2.1",
+        "phpunit/phpunit": "^12.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "__NAMESPACE_JSON__\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "__NAMESPACE_JSON__\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "infection/extension-installer": false
+        },
+        "sort-packages": true
+    }
+}
