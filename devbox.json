@@ -2,6 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.18.4/.schema/devbox.schema.json",
   "packages": [
     "shellcheck@latest",
-    "go-task@3.53.1"
+    "go-task@3.53.1",
+    "shunit2@2.1.8"
   ]
 }
