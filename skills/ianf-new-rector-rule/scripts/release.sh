@@ -1,0 +1,1 @@
+../../../shared/scripts/release.sh

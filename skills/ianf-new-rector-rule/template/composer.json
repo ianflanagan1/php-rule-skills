@@ -1,0 +1,38 @@
+{
+    "name": "__PACKAGE__",
+    "description": "__DESCRIPTION__",
+    "type": "rector-extension",
+    "license": "MIT",
+    "keywords": ["rector", "rector-extension", "rector-rule", "refactoring"],
+    "authors": [
+        {
+            "name": "Ian Flanagan"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "rector/rector": "^2.8"
+    },
+    "require-dev": {
+        "infection/infection": "^0.35",
+        "laravel/pint": "^1.32",
+        "phpstan/phpstan": "^2.1",
+        "phpunit/phpunit": "^12.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "__NAMESPACE_JSON__\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "__NAMESPACE_JSON__\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "infection/extension-installer": false
+        },
+        "sort-packages": true
+    }
+}
